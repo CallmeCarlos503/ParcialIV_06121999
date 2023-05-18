@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtUIDC"
+        android:layout_width="247dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Ingrese un ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <EditText
+        android:id="@+id/edtUNombreC"
+        android:layout_width="252dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese un Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtUIDC"
+        app:layout_constraintStart_toStartOf="@+id/edtUIDC"
+        app:layout_constraintTop_toBottomOf="@+id/edtUIDC" />
+
+    <EditText
+        android:id="@+id/edtUApellidoC"
+        android:layout_width="252dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese un apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtUNombreC"
+        app:layout_constraintStart_toStartOf="@+id/edtUNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/edtUNombreC" />
+
+    <EditText
+        android:id="@+id/edtUDireccionC"
+        android:layout_width="245dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese su Direccion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtUApellidoC"
+        app:layout_constraintStart_toStartOf="@+id/edtUApellidoC"
+        app:layout_constraintTop_toBottomOf="@+id/edtUApellidoC" />
+
+    <EditText
+        android:id="@+id/edtUCiudadC"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="309dp"
+        android:ems="10"
+        android:hint="Ingrese la Ciudad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtUDireccionC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtUDireccionC"
+        app:layout_constraintTop_toBottomOf="@+id/edtUDireccionC"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <Button
+        android:id="@+id/btnInsertarC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Insertar"
+        app:layout_constraintEnd_toEndOf="@+id/edtUCiudadC"
+        app:layout_constraintStart_toStartOf="@+id/edtUCiudadC"
+        app:layout_constraintTop_toBottomOf="@+id/edtUCiudadC" />
+</androidx.constraintlayout.widget.ConstraintLayout>
